@@ -1,0 +1,52 @@
+@import './colors';
+@import './sizes';
+
+.searchbarContainer {
+   width: 100%;
+   height: 32px;
+
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+
+   transition: 100ms all;
+
+   margin-bottom: 1.5rem;
+
+   .searchIcon {
+      width: 32px;
+      height: 32px;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-right: 5%;
+
+      @include tablet {
+         margin-right: 0.65rem;
+      }
+   }
+
+   .searchInput {
+      background-color: transparent;
+      max-width: 400px;
+      width: 100%;
+      height: 100%;
+
+      color: $white;
+      font-size: 1rem;
+      font-weight: 300;
+
+      padding: 0 1rem;
+
+      border: 0;
+      outline: 0;
+
+      caret-color: $red;
+
+      @include tablet {
+         font-size: 1.5rem;
+      }
+   }
+}

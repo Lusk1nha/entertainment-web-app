@@ -17,16 +17,13 @@
    -moz-osx-font-smoothing: grayscale;
 }
 
-#root {
+html, body, #root {
    background-color: $background-color;
 
    width: 100%;
-   min-height: 100vh;
    height: 100vh;
 
    display: flex;
    align-items: center;
    justify-content: center;
-
-   padding: 4rem 2rem 2rem;
 }
