@@ -1,17 +1,17 @@
 interface IThumbnail {
-   trending: ITrending;
+   trending?: ITrending;
    regular: IRegular;
 }
 
 interface ITrending {
-   small: string | File;
-   large: string | File;
+   small: string | undefined;
+   large: string | undefined;
 }
 
 interface IRegular {
-   small: string | File;
-   medium: string | File;
-   large: string | File;
+   small: string | undefined;
+   medium: string | undefined;
+   large: string | undefined;
 }
 
 export interface ICardProps {
